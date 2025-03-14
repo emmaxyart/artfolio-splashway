@@ -74,11 +74,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
-        <span className="text-sm text-art-medium-gray mb-2">Scroll to explore</span>
-        <div className="w-[2px] h-12 bg-gradient-to-b from-art-medium-gray/20 to-art-medium-gray/80" />
-      </div>
     </section>
   );
 };
