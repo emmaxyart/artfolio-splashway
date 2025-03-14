@@ -2,7 +2,7 @@
 import React from 'react';
 import ArtworkCard from './ArtworkCard';
 
-const FeaturedWorks = () => {
+const FeaturedWorks: React.FC = () => {
   return (
     <section id="work" className="section-padding">
       <div className="layout-container">

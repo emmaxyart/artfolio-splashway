@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Palette } from 'lucide-react';
 
-const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+const Navbar: React.FC = () => {
+  const [scrolled, setScrolled] = useState<boolean>(false);
   
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       const isScrolled = window.scrollY > 20;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);

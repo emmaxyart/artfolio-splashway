@@ -17,7 +17,7 @@ const ArtworkCard: React.FC<ArtworkCardProps> = ({
   year = '',
   large = false
 }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
   
   return (
     <div className={cn(

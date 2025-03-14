@@ -2,10 +2,10 @@
 import React from 'react';
 import { useToast } from '@/components/ui/use-toast';
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const { toast } = useToast();
   
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     
     // In a real app, this would send the form data to a server

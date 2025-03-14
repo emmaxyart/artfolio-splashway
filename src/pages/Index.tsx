@@ -7,7 +7,7 @@ import LatestArtpiece from '@/components/LatestArtpiece';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <div className="min-h-screen relative">
       <Navbar />

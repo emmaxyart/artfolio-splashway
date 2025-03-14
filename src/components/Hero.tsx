@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Palette } from 'lucide-react';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const lineRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {

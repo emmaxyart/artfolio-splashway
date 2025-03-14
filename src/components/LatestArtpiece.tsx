@@ -1,10 +1,10 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-const LatestArtpiece = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const LatestArtpiece: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);
   
   useEffect(() => {
     const observerOptions = {
