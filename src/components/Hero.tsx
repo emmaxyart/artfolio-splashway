@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
+import { Palette } from 'lucide-react';
 
 const Hero = () => {
   const lineRef = useRef<HTMLDivElement>(null);
@@ -46,9 +47,16 @@ const Hero = () => {
             </span>
           </div>
           
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-tight sm:leading-tight text-balance animate-fade-up mb-6">
+          <div className="flex items-center justify-center mb-6 animate-fade-up">
+            <Palette className="text-art-accent mr-3" size={36} strokeWidth={1.5} />
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-tight sm:leading-tight text-balance">
+              <span className="text-art-accent italic font-serif">E</span>mmaxy <span className="text-art-accent italic font-serif">A</span>rt
+            </h1>
+          </div>
+          
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-medium leading-tight sm:leading-tight text-balance animate-fade-up mb-6">
             Transforming <em className="font-serif italic">imagination</em> into visual reality
-          </h1>
+          </h2>
           
           <div className="w-20 h-[1px] bg-art-black/30 mx-auto mb-6 overflow-hidden">
             <div ref={lineRef} className="w-0 h-full bg-art-black" />

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Palette } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,8 +10,11 @@ const Footer = () => {
       <div className="layout-container">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="text-art-black font-serif text-xl font-medium inline-block">
-              Portfolio
+            <a href="/" className="flex items-center gap-2 text-art-black font-serif inline-block">
+              <Palette className="text-art-accent" size={20} strokeWidth={1.5} />
+              <span className="font-serif text-xl font-medium italic">
+                <span className="text-art-accent">E</span>mmaxy <span className="text-art-accent">A</span>rt
+              </span>
             </a>
             <p className="text-art-medium-gray text-sm mt-2">
               Creating art that resonates with the soul.
@@ -31,7 +35,7 @@ const Footer = () => {
             </div>
             
             <p className="text-art-medium-gray text-sm">
-              © {currentYear} Artist Portfolio. All rights reserved.
+              © {currentYear} Emmaxy Art. All rights reserved.
             </p>
           </div>
         </div>

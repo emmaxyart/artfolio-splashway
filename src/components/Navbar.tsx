@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import { Palette } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,8 +29,11 @@ const Navbar = () => {
     >
       <div className="layout-container">
         <nav className="flex items-center justify-between">
-          <a href="/" className="text-art-black font-serif text-2xl font-medium transition-opacity duration-300 hover:opacity-80">
-            Portfolio
+          <a href="/" className="flex items-center gap-2 text-art-black transition-opacity duration-300 hover:opacity-80">
+            <Palette className="text-art-accent" size={24} strokeWidth={1.5} />
+            <span className="font-serif text-2xl font-medium italic">
+              <span className="text-art-accent">E</span>mmaxy <span className="text-art-accent">A</span>rt
+            </span>
           </a>
           
           <div className="flex items-center space-x-8">
